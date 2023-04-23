@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Busca</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Sistema de Busca</h1>
+    </header>
+    <section id="fundo">
+        <div > 
+           <p>Ano de nascimento:</p>
+           <input type="number" name="txtano" id="txtano" min="0" />
+        </p>
+           <p>Sexo:
+           <input type="radio" name="radsex" id="mas" checked />
+           <label for="mas">Masculino</label>
+           <input type="radio" name="radsex" id="fem" />
+           <label for="fem">Femenino</label>
+           </p>
+           <p>
+            <input type="button" value="VERIFICAR" onclick="verificar()" />
+           </p>
+      
+        </div>
+        <div id="res">
+           Preencha os dados acima para ver o resultado!
+        </div>
+
+    </section>
+
+    <footer>
+<p>&copy; Sistema de Busca</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
